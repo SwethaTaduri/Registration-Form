@@ -1,0 +1,44 @@
+body{
+    font-family: sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    font-size:14px;
+}
+.form-class{
+    width: 390px;
+}
+.form-class input{
+    width: 100%;
+    padding: 8px 4px;
+}
+.form-class div{
+    padding: 10px;
+}
+.btn-class{
+    width : 100%;
+    padding: 8px 4px;
+    background-color: burlywood;
+    color:white;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    right: 10px;
+    top:20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.d-none{
+    display: none;
+}
+.errMsg, .emptyfield {
+    color:red;
+}
+.error{
+    border: 2px solid red;
+}

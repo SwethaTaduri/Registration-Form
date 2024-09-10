@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration Form </title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <meta charset = "UTF-8">
+        <meta name = "Description" content = "Register Form">
+        <meta name = "Author" content = "Swetha Taduri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <h1 class="heading-1"> Registration Form </h1>
+        <form class="form-class">
+            <div>
+                <label> 
+                  First Name 
+                  <input data-key="firstname" type="text" placeholder="First Name" />
+                </label>
+                <span class="errMsg"> Name must only contain alphabets </span> 
+                <span class="emptyfield"> *Please fill this field </span> 
+            </div>
+
+            <div>
+                <label> 
+                    Last Name 
+                   <input data-key="lastname" type="text" placeholder="Last Name">
+                </label> 
+                <span class="errMsg"> Name must only contain alphabets </span>
+                <span class="emptyfield"> *Please fill this field </span>
+            </div>
+
+            <div>
+                <label> 
+                    Email Id 
+                    <input data-key="email" type="text" placeholder="name@example.com">
+                </label>
+                <span class="errMsg"> Invalid Email </span>
+                <span class="emptyfield"> *Please fill this field </span>
+            </div>
+
+            <div >
+                <label class="relative"> 
+                    Password 
+                   <input data-key="password" type="password" placeholder="***********">
+                   <button id="button-class" class="absolute">  <span class="material-symbols-outlined">
+                    visibility
+                    </span>
+                   </button>
+                </label>
+                <ul class="errMsg">
+                    <li> Password must contain atleast 8 characters </li>
+                    <li> Password must contain atleast one lower case letter </li>
+                    <li> Password must contain atleast one upper case letter </li>
+                    <li> Password must contain atleast one digit </li>
+                    <li> Password must contain atleast one special character (!@#$%^&*) </li>
+                </ul>
+                <span class="emptyfield"> *Please fill this field </span>
+            </div>
+
+            <button class="btn-class"> Create Account </button>
+        </form>
+
+        <script src="form.js"></script>
+
+    </body>
+</html>
